@@ -176,15 +176,36 @@ border-radius: 8px;
     margin-top: 0px;
     margin-bottom: 0px;
 }
+#ex-badge{
+    padding: 45px 42px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-left: -100px;
+    margin-top: -100px;
+}
+#ex-year{
+    font-size: 4rem;
+    font-weight: 700;
+}
+img img{
+    width: 100%;
+}
 /* responsive */
 @media screen and (max-width: 576px) {
-    .navbar,.teams, .nav-link{
+    .navbar,.teams, .nav-link,.features{
         flex-direction: column;
     }
     .team-img-container,.fects-container,.sponsor-companies{
         grid-template-columns: repeat(1,1fr);
     }
     .ours-features{
+    margin-left: 20px;
+}
+img img{
+    width: 100%;
+}
+#ex-badge{
+    margin-top: 20px;
     margin-left: 20px;
 }
 .sponsor-companies{
@@ -200,11 +221,15 @@ border-radius: 8px;
 
 /* medium */
 @media screen and (min-width: 576px) and (max-width:992px) {
-    .teams{
+    .teams, .features{
         flex-direction: column;
     }
     .ours-features{
     margin-left: 50px auto;
+}
+#ex-badge{
+    margin-top: 20px;
+    margin-left: 20px;
 }
 .sponsor-companies, .fects-container{
     grid-template-columns: repeat(2,1fr);
